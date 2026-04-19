@@ -25,13 +25,19 @@ function AdminShell() {
   );
 }
 
-const navItems = [
+type NavItem = {
+  to: "/admin" | "/admin/courses" | "/admin/leads" | "/admin/results" | "/admin/settings";
+  label: string;
+  icon: React.ComponentType<{ className?: string }>;
+  exact?: boolean;
+};
+const navItems: NavItem[] = [
   { to: "/admin", label: "Dashboard", icon: LayoutDashboard, exact: true },
   { to: "/admin/courses", label: "Courses", icon: BookOpen },
   { to: "/admin/leads", label: "Leads", icon: Users },
   { to: "/admin/results", label: "Results", icon: Trophy },
   { to: "/admin/settings", label: "Settings", icon: Settings },
-] as const;
+];
 
 function AdminGate() {
   const { user, loading, signOut } = useAuth();
