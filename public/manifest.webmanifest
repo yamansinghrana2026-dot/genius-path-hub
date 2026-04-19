@@ -1,0 +1,12 @@
+{
+  "name": "PJN Educare",
+  "short_name": "PJN Educare",
+  "description": "India's Leading Coaching Hub — IIT-JEE, NEET, CUET, NDA & Govt Jobs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A1F44",
+  "theme_color": "#0A1F44",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
